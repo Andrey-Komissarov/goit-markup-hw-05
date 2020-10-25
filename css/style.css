@@ -211,6 +211,7 @@ h2.titel {
 
 .modal {
   position: absolute;
+  z-index: 999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
