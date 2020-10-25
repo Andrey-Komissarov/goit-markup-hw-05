@@ -125,16 +125,16 @@ h2.titel {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .nav > .list > .item:not(:last-child) {
   margin-right: 50px;
 }
 
 .nav > .list .link:hover,
 .nav > .list .link:focus {
-  transition-property: color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
 }
 
@@ -142,13 +142,15 @@ h2.titel {
   color: var(--accent-color);
   position: relative;
 }
+
 .nav > .list .link.current::after {
   content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
   width: 100%;
-  border: 2px solid var(--accent-color);
+  height: 4px;
+  background-color: var(--accent-color);
   border-radius: 2px;
 }
 
@@ -175,6 +177,10 @@ h2.titel {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .link:hover,
@@ -183,13 +189,12 @@ h2.titel {
 .contacts .icon:focus {
   --color4: var(--accent-color);
   color: var(--accent-color);
-  transition-property: color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contacts .icon {
   margin-right: 10px;
 }
+
 /* Блок герой */
 .hero {
   padding: 200px 0;
@@ -236,15 +241,16 @@ h2.titel {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   color: var(--accent-color);
   background-color: var(--primary-bg-color);
-  transition-property: color, background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Блок Наши приимущества */
@@ -385,6 +391,10 @@ h2.titel {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team .item:not(:last-child) {
@@ -395,9 +405,6 @@ h2.titel {
 .team .link:focus {
   background-color: var(--accent-color);
   --color3: var(--primary-bg-color);
-  transition-property: color, background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* клиенты */
@@ -425,14 +432,14 @@ h2.titel {
   --color3: var(--logo-company-color);
   border: 1px solid var(--color3);
   border-radius: 4px;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-box .link:hover,
 .clients-box .link:focus {
   --color3: var(--accent-color);
-  transition-property: color, transform;
-  transition-duration: 2500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Футер */
@@ -465,13 +472,15 @@ h2.titel {
 
   background-color: rgba(255, 255, 255, 0.1);
   --color3: var(--logo-down-color);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-box-links .link:hover,
 .footer-box-links .link:focus {
   background-color: var(--accent-color);
-  transition-property: background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address > .text {
@@ -489,15 +498,16 @@ h2.titel {
 
   display: inline-block;
   margin-top: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
-  transition-property: color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .join {
   margin: 0;
   margin-bottom: 20px;
@@ -542,15 +552,16 @@ h2.titel {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .galerry-button:hover,
 .galerry-button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  transition-property: color, background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Карты галереи */
@@ -558,13 +569,15 @@ h2.titel {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .galerry-card:hover,
 .galerry-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-property: box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .galerry-card .titel {
